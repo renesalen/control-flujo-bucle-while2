@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Control de flujo de Bucle While 2</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Control de flujo de Bucle While 2</h1>
+	<style>
+		#contenedor{
+			width: 25%;
+			background-color: #145f;
+			margin: auto;
+			padding: 15px;
+		}
+	</style>
+
+	<script>
+		//El otro problema sería si en la edad el usuario introduce texto lugar de numero
+		var nombre, edad, poblacion;
+		nombre=prompt('Introduce tu Nombre por favor');
+		edad=prompt('Introduce tu Edad'); //Aqui la solucion
+			while(edad<=0 || edad>115 || isNaN(edad)){
+			//Utilizamos isNaN
+				edad=prompt('Introduce una edad valida');
+
+			}
+		poblacion=prompt('Introduce Tu Ciudad o Pueblo');
+	</script>
+	<div id="contenedor">
+		<p>Nombre:
+			<script>document.write(nombre)</script>
+		</p>
+		<p>Edad:
+			<script>document.write(edad)</script>
+		</p>
+		<p>Población:
+			<script>document.write(poblacion)</script>
+		</p>
+	</div>
+</body>
+</html>
