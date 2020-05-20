@@ -19,10 +19,14 @@
 	</style>
 
 	<script>
-		//El otro problema sería si en la edad el usuario introduce texto lugar de numero
+		//El usuario podría introducir un numero en su nombre, lo solucionamos de este manera
 		var nombre, edad, poblacion;
 		nombre=prompt('Introduce tu Nombre por favor');
-		edad=prompt('Introduce tu Edad'); //Aqui la solucion
+		while(!isNaN(nombre)){//Aqui la solucion
+			//Mientras nombre SI sea un numero...
+			nombre=prompt('Introduce un Nombre Válido');
+		}
+		edad=prompt('Introduce tu Edad'); 
 			while(edad<=0 || edad>115 || isNaN(edad)){
 			//Utilizamos isNaN
 				edad=prompt('Introduce una edad valida');
