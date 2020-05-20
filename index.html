@@ -14,20 +14,21 @@
 			width: 25%;
 			background-color: #145f;
 			margin: auto;
-			padding: 15px;
+			padding: 10px;
 		}
 	</style>
 
 	<script>
 		//El usuario podría introducir un numero en su nombre, lo solucionamos de este manera
 		var nombre, edad, poblacion;
-		nombre=prompt('Introduce tu Nombre por favor');
+		nombre=prompt('Introduce tu Nombre por favor', 'Su nombre');
+		//'Su nombre' Es el texto que aparece en la campo donde el usuario debe rellenar su nombre. El espacio ' ' indica tambien donde el usuario debe llenar su nombre.
 		while(!isNaN(nombre)){//Aqui la solucion
 			//Mientras nombre SI sea un numero...
-			nombre=prompt('Introduce un Nombre Válido');
+			nombre=prompt('Introduce un Nombre Válido', ' ');
 		}
 		edad=prompt('Introduce tu Edad'); 
-			while(edad<=0 || edad>115 || isNaN(edad)){
+			while(edad<=0 || edad>105 || isNaN(edad)){
 			//Utilizamos isNaN
 				edad=prompt('Introduce una edad valida');
 
